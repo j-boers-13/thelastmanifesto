@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block containerid %}"news"{% endblock containerid %}
+
+{% block content %}
+        <div class="newscontainer">
+          <div id ="tlmnews">
+            <h1 id="newsHeader">The last manifesto news
+          </div>
+          <div id="globalnews">
+            <h1 id="newsHeader"><a href=" {% url 'globalnews'%}">Global news</a></h1>
+            {% for x in news %}
+            <div class="articlebox">
+              <div id="newsimgbox">
+                <a href = "{{ x.url }}"><img src="{{ x.thumbnail }}" id="artglobalimg"></a>
+              </div>
+              <div id="newstxtbox">
+                <a href="#" class="headline" href = "{{ x.url }}">{{ x.headline }}</a>
+                <p id="trailtext">{{ x.trailtext }}</p>
+                <p id="trailtext">{{ x.date }}</p>
+                <p id="trailtext">{{ x.source }}</p>
+              </div>
+
+            </div>
+            {% endfor %}
+            <h3 id="intro3"> <a href="{% url 'globalnews' %}">Read more.</a></h3>
+          </div>
+        </div>
+      </div>
+</div>
+{% endblock %}

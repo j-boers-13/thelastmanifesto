@@ -1,0 +1,25 @@
+$(document).ready(function(){
+  $("#continue").click(function(){
+    $("#abouttitle").fadeOut("slow");
+    $("#aboutimg").fadeOut("slow");
+    $("#abouttxt").fadeOut("slow",function(){
+      $("#aboutimg2").fadeIn(1500).css('display','table');
+      $("#abouttxt2").fadeIn(1700).css('display','inline-block');
+      $("#abouttitle2").fadeIn(1600);
+      $("#aboutjoin").fadeIn(1600).css('display','inline-block');
+      $("#about").attr("id","about2");
+    });
+  });
+
+  $("#continue2").click(function(){
+    $("#abouttitle2").fadeOut("slow");
+    $("#aboutimg2").fadeOut("slow");
+    $("#abouttxt2").fadeOut("slow",function(){
+      $("#aboutimg3").fadeIn(1500).css('display','table');
+      $("#abouttxt3").fadeIn(1700).css('display','inline-block');
+      $("#abouttitle3").fadeIn(1600);
+      $("#aboutjoin").fadeIn(1600).css('display','inline-block');
+      $("#about2").attr("id","about3");
+    });
+  });
+});

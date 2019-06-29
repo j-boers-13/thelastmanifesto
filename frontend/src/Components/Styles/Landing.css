@@ -1,0 +1,64 @@
+#container {
+  padding-top:0;
+}
+
+#home-bg{
+    font-family: 'Playfair Display', serif;
+    height:100vh;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./img/reading-sunset.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding:0px;
+}
+
+
+#landing-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+}
+
+h1#intro {
+  margin-bottom:0px !important;
+  text-align: center;
+  font-size:100px;
+}
+
+h2#intro2 {
+  font-family: 'PT Serif', serif;
+  margin-top:0px;
+  margin-bottom:30px;
+  font-size:35px;
+  text-align: right;
+}
+
+h3>a{
+  color:white;
+}
+
+h3>a:hover{
+  color:#E25822;
+}
+
+h3>a:visited{
+  color:white;
+}
+
+h3#intro3{
+  padding:10px;
+  margin-left:20px;
+  margin-top:0px;
+  margin-bottom:30px;
+  font-size:20px;
+  text-align: right;
+  color:white;
+  border-width:0px;
+  border-radius:2px;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  float:right;
+}

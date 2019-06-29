@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block containerid %}"gncontainer"{% endblock containerid %}
+
+{% block content %}
+        <div class ="container-fluid bgimg" id="gn">
+          <div id="globalHeader">
+            <h1>Global news</h1>
+            <h3>Read up on the latest climate change news from around the world.</h3>
+          </div>
+          <div id="gnArtbox">
+          {% for x in news %}
+          <div class="sing-gnArtbox">
+            <div id="gnImgbox">
+              <a href = "{{ x.url }}"><img src="{{ x.thumbnail }}" id="gnImg"></a>
+            </div>
+            <div id="newstxtbox">
+              <a class=headline href = "{{ x.url }}">{{ x.headline }}</a>
+              <p id="trailtext">{{ x.trailtext }}</p>
+              <p id="trailtext">{{ x.date }}</p>
+              <p id="trailtext">{{ x.source }}</p>
+            </div>
+          </div>
+        {% endfor %}
+        </div>
+        <h4><center>
+        <div class="pagination">
+          <span class="step-links">
+            {% if news.has_previous %}
+            <a href="?page=1">&laquo; first</a>
+            <a href="?page={{ news.previous_page_number}}">previous</a>
+            {% else %}
+            &laquo first previous
+            {% endif %}
+
+            <span class="current">
+              Page {{ news.number }} of {{ news.paginator.num_pages }}.
+            </span>
+
+          {% if news.has_next %}
+              <a href="?page={{ news.next_page_number }}">next</a>
+              <a href="?page={{ news.paginator.num_pages }}">last &raquo;</a>
+          {% else %}
+              next last &raquo;
+          {% endif %}
+          </span>
+        </div>
+        </center></h4>
+      </div>
+
+  </div>
+</div>
+{% endblock %}

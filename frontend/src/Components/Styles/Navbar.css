@@ -1,0 +1,28 @@
+.navbar{
+  border-radius: 0px;
+  position: fixed;
+  z-index:170;
+  left: 0;
+  top:0;
+  width:100%;
+  margin-bottom:2px;
+  font-size:15px;
+  background: rgba(0, 0, 0, 1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  padding-top:16px;
+  color:white;
+}
+
+.navbar-inverse .navbar-brand {
+  font-size:30px;
+  color:#E25822;
+}
+
+#container{
+font-family: 'Playfair Display', serif;
+width: 100%;
+padding-top:52px;
+}

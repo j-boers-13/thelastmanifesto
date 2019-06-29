@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block containerid %}"lecture-bg"{% endblock containerid %}
+
+{% block content %}
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th>Board</th>
+          <th>Posts</th>
+          <th>Topics</th>
+          <th>Last Post</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for board in boards %}
+          <tr>
+            <td>
+              <a class="sitebox-link" href="{% url 'board_topics' board.pk %}">{{ news }}</a>
+            </br>
+              <small class="text-muted d-block">{{ board.description }}</small>
+            </td>
+            <td class="align-middle">0</td>
+            <td class="align-middle">0</td>
+            <td></td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

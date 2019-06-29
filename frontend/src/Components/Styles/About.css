@@ -1,0 +1,141 @@
+#about{
+    min-width:700px;
+    min-height:100vh;
+    display:table;
+    position: relative;
+    background-color:#4ABDAC;
+    padding:0px;
+    padding-top:52px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+#about2{
+    min-width:700px;
+    min-height:100vh;
+    display:table;
+    position: relative;
+    background-color:#E25822;
+    padding:0px;
+    padding-top:52px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+#about3{
+  min-width:700px;
+  min-height:100vh;
+  display:table;
+  position: relative;
+  background-color:#F7B733;
+  padding:0px;
+  padding-top:52px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+#aboutimg{
+  display: table;
+  margin-top:0;
+  float:left;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url('img/polar-bear.jpg');
+  height: calc(50vh - 52px);
+  width:100%;
+  background-size: 80%;
+  background-position:center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#aboutimg2{
+  display: table;
+  margin-top:0;
+  float:left;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7) ), url('img/book-learning.jpg');
+  height: calc(50vh - 52px);
+  width:100%;
+  background-size: cover;
+  background-position:center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#aboutimg3{
+  display: table;
+  margin-top:0;
+  float:left;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4) ), url('img/penpaper.jpg');
+  height: calc(50vh - 52px);
+  width:100%;
+  background-size: cover;
+  background-position:center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#abouttitle{
+  display:table-cell;
+  vertical-align:bottom;
+  font-size:10vh;
+  color:white;
+  text-align:center;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.8);
+}
+
+#abouttitle2{
+  display:table-cell;
+  vertical-align:bottom;
+  font-size:10vh;
+  color:white;
+  text-align:center;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.8);
+}
+
+#abouttitle3{
+  display:table-cell;
+  vertical-align:bottom;
+  font-size:10vh;
+  color:white;
+  text-align:center;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.8);
+}
+
+#abouttxt{
+  padding-top:52px;
+  padding-left:10%;
+  padding-right:10%;
+  display:table-cell;
+  float:center;
+  text-align:left;
+  vertical-align:middle;
+  float:left;
+  width:100%;
+  min-width:450px;
+  color:black;
+  font-size:4vh;
+}
+
+#abouttxt2{
+  padding-top:52px;
+  padding-left:10%;
+  padding-right:10%;
+  display:table-cell;
+  float:center;
+  text-align:left;
+  vertical-align:middle;
+  float:left;
+  width:100%;
+  min-width:450px;
+  color:black;
+  font-size:4vh;
+}
+
+#abouttxt3{
+  padding-top:52px;
+  padding-left:10%;
+  padding-right:10%;
+  display:table-cell;
+  float:center;
+  text-align:left;
+  vertical-align:middle;
+  float:left;
+  width:100%;
+  min-width:450px;
+  color:black;
+  font-size:4vh;
+}
